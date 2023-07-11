@@ -14,7 +14,7 @@ public class DemoController {
 
 
     @Autowired
-    public DemoController(@Qualifier("fish") Animal theAnimal){
+    public DemoController(@Qualifier("duck") Animal theAnimal){
         myAnimal = theAnimal;
     }
 

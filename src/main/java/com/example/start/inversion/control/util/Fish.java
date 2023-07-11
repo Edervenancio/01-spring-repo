@@ -1,26 +1,28 @@
-package com.example.start.inversion.control.demo.util;
+package com.example.start.inversion.control.util;
 
 import com.example.start.inversion.control.demo.common.Animal;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 
 @Component
-public class Duck implements Animal {
+@Lazy
+public class Fish implements Animal {
 
 
     @Override
     public String sound(){
-        return "Quack";
+        return "Booop";
     }
 
+    @Override
     public String movement(){
-        return "Fly";
+        return "swims";
     }
 
+    @Override
     public String name(){
-        return "Duck";
+        return "Fish";
     }
 
 }
-
-
